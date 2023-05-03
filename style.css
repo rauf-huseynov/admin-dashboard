@@ -20,6 +20,11 @@ body {
     grid-row: 2 / 3;
 }
 
+.navigation div {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
 .navigation-settings {
     grid-row: 3 / 4;
 }
@@ -77,4 +82,20 @@ body {
 
 .project-card {
     width: 150px;
+}
+
+.dashboard-logo img {
+    height: 48px;
+}
+
+.dashboard-logo div {
+    font-size: 28px;
+}
+
+img {
+    height: 24px;
+}
+
+.navigation div {
+    font-size: 20px;
 }
