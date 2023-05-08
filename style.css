@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 4fr;
     height: 100vh;
 }
 
@@ -10,23 +10,49 @@ body {
     display: grid;
     grid-template-rows: 1fr 6fr 6fr;
     height: 100vh;
+    padding-left: 12px;
+    gap: 36px;
 }
 
 .dashboard-logo {
+    padding-top: 24px;
     grid-row: 1 / 2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
 }
 
 .navigation {
     grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 18px;
 }
 
 .navigation div {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+    padding-left: 8px;
+}
+
+.navigation-settings div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+    padding-left: 8px;
 }
 
 .navigation-settings {
     grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 18px;
 }
 
 .main-window {
@@ -54,7 +80,7 @@ body {
     display: flex;
     gap: 8px;
     flex: 1;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 
 }
@@ -85,7 +111,7 @@ body {
 }
 
 .dashboard-logo img {
-    height: 48px;
+    height: 42px;
 }
 
 .dashboard-logo div {
@@ -96,6 +122,81 @@ img {
     height: 24px;
 }
 
-.navigation div {
+.navigation div,
+.navigation-settings div {
     font-size: 20px;
+}
+
+#search {
+   margin-left: 12px;
+   border-radius: 20px;
+   height: 24px;
+}
+
+#search-icon {
+    margin-bottom: -8px;
+    margin-left: 36px;
+}
+
+#profile-image {
+    height: 42px;
+    width: 42px;
+    border-radius: 100%;
+}
+
+.notification img {
+    margin-left: 30px;
+    margin-right: -40px;
+}
+
+.profile-name {
+    margin-left: -40px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.greetings {
+    display: flex;
+    align-items: center;
+}
+
+#profile-image-greetings {
+    height: 56px;
+    width: 56px;
+    border-radius: 100%;
+    margin: 0px 12px 12px 12px;
+}
+
+.greeting-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 8px;
+}
+
+.greetings-buttons button {
+    margin: 0 15px;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.notification-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px
+}
+
+.project-card {
+    width: 320px;
+    height: 200px;
+    border: 5px solid yellow;
+    border-radius: 10px;
+}
+
+.announcement-card,
+.trending-card{
+    width: 200px;
+    height: 100px;
 }
